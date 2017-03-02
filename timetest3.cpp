@@ -283,7 +283,7 @@ void RunSeparateChaining(char *filename, int size)
 
 void RunQuadraticProbing(char *filename, int size)
 {
-  QuadraticPtrHashTable <int> hashTable(-1, size);
+  QuadraticHashTable <int> hashTable(-1, size);
   ct.reset();
   ifstream inf(filename);
   char command, s[512];
@@ -378,3 +378,4 @@ int main(){
 
   return 0;
 }  // main()
+
